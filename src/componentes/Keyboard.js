@@ -16,17 +16,17 @@ const Keyboard = () => {
       onDelete()
     } else {
       keys1.forEach((key) => {
-        if (e.key === key) {
+        if (e.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetter(key);
         }
       });
       keys2.forEach((key) => {
-        if (e.key === key) {
+        if (e.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetter(key);
         }
       });
       keys3.forEach((key) => {
-        if (e.key === key) {
+        if (e.key.toLowerCase() === key.toLowerCase()) {
           onSelectLetter(key);
         }
       });
